@@ -1,100 +1,105 @@
-body{
+/**--- RESET ---**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+}
+
+body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
-.navbar {
-    padding: 15px;
-    background-color: #a2c1c7;
-    /*border: red solid 2px;*/
-}
-
-.links{
+li, 
+a {
+    list-style:  none;
     text-decoration: none;
+    color: inherit
+}
+
+/**--- NAV RESPONSIVO ---**/
+.div_navbar {
     display: flex;
     justify-content: flex-end;
-    color: white;
-    font-size: 16px;
-
-
-}
-
-.link_a{
-    padding: 20px
-
-}
-.menu{
-    
+    background-color: #a2c1c7;
     
 }
-.icone_responsivo {
-    width: 20px;
-    
+
+.navbar{
+    background-color: #a2c1c7;
+    padding: 0.3em;
+    /* border: yellow solid 1px; */
 }
-.menu_hamburguer{
+
+.links {
     display: none;
-    
+    color: white; 
 }
 
-.icon_menu {
-    color: white;
-    
-    
-}
-
-header {
-    background-image:url(/img/foto-banner.jpg);
-    filter: grayscale();
-    height: 400px;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    
-    
-}
-
-h1 {
-    padding: 8px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-    font-size: 54px;
-}
-.btn_header {
-    margin-top: 50px;
-    background: #8f8d8d;
-    color: #fff;
-    padding: 15px;
-    font-weight: 900;
-    font-size: 11px;
-    border: none
-    
-}
-
-
-/* max width é até x pixels e o min width é a partir de x pixels*/
-@media screen and (max-width:600px) {
-    .menu_hamburguer {
-        padding: 0rem;
-       /* height: 1rem;*/
+@media screen and (min-width: 600px){
+    .links {
         display: flex;
         justify-content: flex-end;
-        background-color: #a2c1c7;
-        
-   }
-    .links {
+        color: red;
+        background-color: lawngreen;
+    }
+}
+
+.menu{
+    border: solid white 0.1em;
+    padding:0.5em;
+    color: white;
+}
+
+@media screen and (min-width: 600px){
+    .menu {
+        border: none;
+    }
+}
+
+.menu_hamburguer {
+
+}
+
+@media screen and (min-width: 600px){
+    .menu_hamburguer {
         display: none;
     }
-
-    .icon_menu {
-        border: white solid 2px;
-        padding: 13px;
-        /*height: 1rem*/
-    }
-
-    h1{
-        margin-top: auto;
-    }
-
-    ..navbar{
-        padding: 0rem;
-        }
 }
+
+/**--- HEADER ---**/
+
+header{
+    background-image:url(/img/foto-banner.jpg);
+    image-orientation: flip;
+    filter: grayscale();
+    height: 80vh;
+}
+
+@media screen and (min-width: 600px){
+    header {
+        background-size: 100%;
+    }
+}
+
+
+.header_div {
+    color: white;
+    text-align: center;
+    
+    
+}
+
+.header_h1 {
+    font-size: 4rem ;
+    margin-bottom: 0.5rem;
+    padding-top: 5rem;
+}
+
+/**--- BOTÃO HEADER ---**/
+
+
