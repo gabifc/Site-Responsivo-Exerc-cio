@@ -20,6 +20,16 @@ a {
     text-decoration: none;
     color: inherit
 }
+ul {
+
+}
+
+@media screen and (min-width: 600px){
+    a {
+        padding: 2rem;
+       
+    }
+}
 
 /**--- NAV RESPONSIVO ---**/
 .div_navbar {
@@ -43,9 +53,10 @@ a {
 @media screen and (min-width: 600px){
     .links {
         display: flex;
-        justify-content: flex-end;
-        color: red;
-        background-color: lawngreen;
+        justify-content: space-around;
+        
+        color:white;
+        background-color: #a2c1c7;
     }
 }
 
@@ -78,8 +89,11 @@ header{
     background: linear-gradient(to bottom, transparent 50%, #161616 99%), url(/img/foto-banner.jpg) no-repeat center center / cover;
     image-orientation: flip;
     filter: grayscale();
-    height: 70vh;
+    height: 100%;
+    width: 100%;
     margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
 }
 
 @media screen and (min-width: 600px){
@@ -91,14 +105,18 @@ header{
 .header_div {
     color: white;
     text-align: center;
-    
-    
 }
 
 .header_h1 {
     font-size: 4rem ;
     margin-bottom: 0.5rem;
     padding-top: 5rem;
+}
+
+@media screen and (min-width: 600px){
+    header_h1 {
+    
+    }
 }
 
 .header_p{
@@ -159,7 +177,6 @@ hr{
     margin-top: auto;
     padding-top:1rem;
     padding-bottom:0;
-
 }
 section{
     text-align: center;
